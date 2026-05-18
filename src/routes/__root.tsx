@@ -72,14 +72,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Restaurant Sentiment Analyzer" },
+      { name: "description", content: "Analyze restaurant reviews for sentiment with confidence scores, key signals, and an aggregate dashboard." },
+      { property: "og:title", content: "Restaurant Sentiment Analyzer" },
+      { property: "og:description", content: "Paste a review or explore aggregate sentiment insights across 25 restaurant reviews." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
       {
