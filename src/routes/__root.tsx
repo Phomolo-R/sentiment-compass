@@ -72,16 +72,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Restaurant Sentiment Analyzer" },
-      { name: "description", content: "Analyze restaurant reviews for sentiment with confidence scores, key signals, and an aggregate dashboard." },
-      { property: "og:title", content: "Restaurant Sentiment Analyzer" },
-      { property: "og:description", content: "Analyze restaurant reviews for sentiment with confidence scores, key signals, and an aggregate dashboard." },
+      { title: "FinAssist — AI Loan & Credit Guidance" },
+      { name: "description", content: "Chat with FinAssist, an AI-powered loan and credit guidance assistant for South African banking questions." },
+      { property: "og:title", content: "FinAssist — AI Loan & Credit Guidance" },
+      { property: "og:description", content: "Chat with FinAssist, an AI-powered loan and credit guidance assistant for South African banking questions." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:title", content: "Restaurant Sentiment Analyzer" },
-      { name: "twitter:description", content: "Analyze restaurant reviews for sentiment with confidence scores, key signals, and an aggregate dashboard." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ed767b8a-d450-4dec-9e15-38965fc4d0c1/id-preview-46273df4--ad0859f2-5336-4fcc-985b-195af37c066a.lovable.app-1779114203584.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ed767b8a-d450-4dec-9e15-38965fc4d0c1/id-preview-46273df4--ad0859f2-5336-4fcc-985b-195af37c066a.lovable.app-1779114203584.png" },
+      { name: "twitter:title", content: "FinAssist — AI Loan & Credit Guidance" },
+      { name: "twitter:description", content: "Chat with FinAssist, an AI-powered loan and credit guidance assistant for South African banking questions." },
     ],
     links: [
       {
