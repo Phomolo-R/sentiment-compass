@@ -71,10 +71,10 @@ function FinAssistPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[var(--fa-navy)] px-4 py-4 text-white"
+    <div className="min-h-screen bg-[#0a0a0a] px-4 py-4 text-white"
       style={{
         backgroundImage:
-          "radial-gradient(ellipse at 20% 20%, rgba(201,168,76,0.08) 0%, transparent 60%), radial-gradient(ellipse at 80% 80%, rgba(26,53,96,0.6) 0%, transparent 60%)",
+          "radial-gradient(ellipse at 20% 20%, rgba(201,168,76,0.06) 0%, transparent 60%), radial-gradient(ellipse at 80% 80%, rgba(20,20,20,0.8) 0%, transparent 60%)",
       }}
     >
       <div className="mx-auto flex w-full max-w-[860px] flex-col gap-4">
