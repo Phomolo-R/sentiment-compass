@@ -3,7 +3,7 @@ import { useServerFn } from "@tanstack/react-start";
 import { useEffect, useRef, useState } from "react";
 import { chatWithFinAssist, type ChatMsg } from "@/lib/finassist.functions";
 
-export const Route = createFileRoute("/finassist")({
+export const Route = createFileRoute("/")({
   component: FinAssistPage,
   head: () => ({
     meta: [
