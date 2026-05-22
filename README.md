@@ -1,19 +1,27 @@
-# Restaurant Review Sentiment Analysis
-### CAPACITI Clickatell AI Bootcamp 2026 — Week 3 Project
-**Theme:** AI for Data Analysis & Insights
+# FinAssist — AI-Powered Loan & Credit Guidance Chatbot
+### CAPACITI Clickatell AI Bootcamp 2026 — Week 4 Project
+**Industry:** Finance / Banking  
+**Theme:** End-to-End AI Solution & Career Readiness  
 **Date:** May 2026
 
 ---
 
-## Project Overview
+## What is FinAssist?
 
-This project demonstrates the use of AI-assisted sentiment analysis to extract meaningful business insights from unstructured restaurant customer review data. A dataset of 25 restaurant reviews was collected, analyzed, and visualized to identify patterns in customer sentiment.
+FinAssist is an AI-powered chatbot that provides instant, plain-language loan and credit guidance to South African banking customers. Powered by Claude AI (Anthropic), it helps users understand loan types, credit scores, application requirements, and responsible borrowing — 24/7, for free, with no personal data collected.
 
-The project fulfills the Week 3 deliverable requirements:
-- A sentiment analysis tool (interactive analyzer)
-- A dashboard presenting findings visually
-- A data insights report with recommendations
-- Full documentation
+> ⚠️ **Disclaimer:** FinAssist provides general financial guidance only. For personalised advice, consult a qualified financial advisor or your bank.
+
+---
+
+## The Problem It Solves
+
+Many South Africans struggle to make informed decisions about loans and credit because:
+- Banking terminology is complex and confusing
+- Getting advice from a human advisor takes time and appointments
+- Many people don't know what affects their credit score or what to prepare for an application
+
+FinAssist bridges this gap by providing instant, accessible, plain-language answers to financial questions.
 
 ---
 
@@ -21,83 +29,73 @@ The project fulfills the Week 3 deliverable requirements:
 
 | File | Description |
 |------|-------------|
-| `sentiment_analyzer.html` | Interactive tool — paste any review to get instant sentiment classification |
-| `sentiment_dashboard.html` | Visual dashboard — charts, metrics, and full results table |
-| `Restaurant_Sentiment_Analysis_Report.docx` | Written insights report with findings and recommendations |
-| `restaurant_reviews.csv` | Raw dataset — 25 restaurant reviews with text and star ratings |
-| `sentiment_results.csv` | Analysis output — sentiment labels, confidence scores, and key signals |
-| `README.md` | This file — project documentation |
+| `finassist_chatbot.html` | Main deliverable — fully functional AI chatbot |
+| `finassist_documentation.docx` | Full project documentation |
+| `Week4_FinAssist_Presentation.pptx` | 10-slide presentation deck |
+| `README.md` | This file |
 
 ---
 
-## Dataset
+## How to Use
 
-- **Total Reviews:** 25
-- **Source:** Simulated restaurant customer reviews representing typical feedback found on Google Reviews, TripAdvisor, and Zomato
-- **Coverage:** Food quality, service, atmosphere, hygiene, value for money
+1. Download `finassist_chatbot.html`
+2. Open it in any modern browser (Chrome, Firefox, Edge, Safari)
+3. An internet connection is required (for Claude AI API calls)
+4. Click a quick-topic button or type any loan/credit question and press **Enter**
 
-### Sentiment Breakdown
-
-| Sentiment | Count | Percentage | Avg Confidence |
-|-----------|-------|------------|----------------|
-| Positive  | 12    | 48%        | 93%            |
-| Neutral   | 5     | 20%        | 77%            |
-| Negative  | 8     | 32%        | 96%            |
-
----
-
-## Methodology
-
-### Step 1 — Data Collection
-25 restaurant reviews were compiled representing a realistic spread of customer experiences, including a mix of positive, neutral, and negative feedback across key dining factors.
-
-### Step 2 — AI-Assisted Classification
-Each review was analyzed using AI natural language processing to:
-- Assign a **sentiment label** (Positive / Neutral / Negative)
-- Calculate a **confidence score** out of 100
-- Identify the **key signal words** driving the classification
-
-### Step 3 — Insight Generation
-Results were interpreted to identify:
-- What drives positive customer experiences
-- What characterizes neutral or undecided customers
-- What critical issues appear in negative reviews
-
-### Step 4 — Visualization & Reporting
-Findings were presented via:
-- An interactive HTML dashboard with pie chart, bar chart, and confidence score distribution
-- A written Word report with a structured analysis and business recommendations
+### Quick Topics Available
+- 💼 What types of loans are available?
+- 📊 How does credit score affect my loan application?
+- 📄 What documents do I need to apply for a loan?
+- 📈 How can I improve my credit score?
 
 ---
 
-## Key Findings
+## How It Works (Architecture)
 
-### What Customers Love (Positive)
-Food quality and attentive service are the primary drivers of positive sentiment. High-scoring reviews consistently use strong superlatives and express intention to return.
-
-### The Undecided Customer (Neutral)
-Neutral reviews highlight seasoning, portion sizes, and menu variety as areas for improvement. These customers can be converted with targeted improvements.
-
-### Critical Concerns (Negative)
-- **Food safety:** Two reviews raised serious hygiene and food safety issues (99% confidence)
-- **Wait times:** Multiple reviews cited excessive waits despite reservations
-- **Management responsiveness:** Dismissive responses to complaints significantly worsened the customer experience
+```
+User types question
+        ↓
+HTML chat interface captures input
+        ↓
+JavaScript builds API request (with full conversation history)
+        ↓
+Claude AI processes system prompt + conversation history
+        ↓
+AI returns plain-language guidance
+        ↓
+JavaScript renders response with markdown formatting
+        ↓
+User reads answer and asks follow-up questions
+```
 
 ---
 
-## Recommendations
+## Topics Covered
 
-**Priority 1 — Immediate:**
-- Conduct a food safety audit
-- Implement a formal complaints response process
+FinAssist can answer questions about:
 
-**Priority 2 — Short-term:**
-- Review reservation and seating management
-- Invest in kitchen seasoning training
+- **Loan types** — personal loans, home loans (bonds), vehicle finance, student loans, business loans, debt consolidation
+- **Credit scores** — what they are, score ranges (300–850), what affects them, how to improve them
+- **Application process** — documents needed, eligibility criteria, affordability assessments
+- **Interest rates** — fixed vs variable, repo rate, prime rate, how banks calculate rates
+- **Responsible borrowing** — debt-to-income ratio, affordability, avoiding over-indebtedness
+- **SA credit bureaus** — TransUnion, Experian, Compuscan, XDS
+- **National Credit Act (NCA)** — consumer protections
+- **Debt solutions** — consolidation and debt review options
 
-**Priority 3 — Growth:**
-- Expand vegetarian and dietary-preference menu options
-- Leverage positive food quality feedback in marketing
+---
+
+## Responsible AI Features
+
+FinAssist was built with financial responsibility at its core:
+
+| Guardrail | Implementation |
+|-----------|---------------|
+| No personal data | Never asks for ID, account details, or income figures |
+| No approval decisions | Explains criteria only — never predicts qualification |
+| Mandatory disclaimer | Every response reminds users to consult a professional |
+| Financial literacy focus | Empowers users with knowledge, not dependency |
 
 ---
 
@@ -105,46 +103,40 @@ Neutral reviews highlight seasoning, portion sizes, and menu variety as areas fo
 
 | Tool | Purpose |
 |------|---------|
-| Claude AI (Anthropic) | Sentiment classification and confidence scoring |
-| HTML / CSS / JavaScript | Dashboard and analyzer development |
-| Chart.js | Data visualization (pie chart, bar chart) |
-| Microsoft Word (docx) | Insights report |
-| Google Sheets / CSV | Data storage and organization |
+| Claude AI (Anthropic) | Core AI — natural language processing and response generation |
+| HTML / CSS / JavaScript | Chat interface and API integration |
+| Anthropic Messages API | Connects interface to Claude AI |
+| DM Serif Display / DM Sans | Typography (loaded from Google Fonts) |
 
 ---
 
 ## Core Competencies Demonstrated
 
-- **Data interpretation using AI** — extracted business insights from raw text data
-- **Analytical thinking** — structured the analysis around meaningful questions
-- **AI-assisted insights generation** — produced actionable recommendations from AI output
-- **Individual project ownership** — all files documented, organized, and portfolio-ready
+This project demonstrates the Week 4 core competencies:
+
+1. **End-to-end solution design** — Complete layered architecture from UI to AI to response
+2. **Problem-solving using AI** — Real banking problem solved with accessible AI tools
+3. **Presentation and storytelling** — 10-slide deck explaining problem, solution, and responsible AI
+4. **Portfolio finalization** — Fourth and final project completing the bootcamp portfolio
 
 ---
 
-## How to Use the Files
+## Full Bootcamp Portfolio
 
-### Sentiment Analyzer
-1. Open `sentiment_analyzer.html` in any web browser
-2. Paste any restaurant review into the text box
-3. Click **Analyze Sentiment** to get an instant classification, confidence score, and key signals
-4. Use the preset buttons to try example reviews
-
-### Dashboard
-1. Open `sentiment_dashboard.html` in any web browser
-2. View the pie chart, bar chart, confidence distribution, and full results table
-3. No internet connection required — fully self-contained
-
-### CSV Files
-1. Open `restaurant_reviews.csv` or `sentiment_results.csv` in Google Sheets or Excel
-2. Use **File → Import** in Google Sheets to upload
+| Week | Project | Description |
+|------|---------|-------------|
+| Week 1 | AI Chatbot | Conversational AI prototype |
+| Week 2 | Content Generator | AI-powered content creation tool |
+| Week 3 | Sentiment Analysis Tool | Restaurant review sentiment analyzer |
+| Week 4 ✓ | **FinAssist** | AI loan & credit guidance chatbot |
 
 ---
 
-## Portfolio Notes
+## About CAPACITI
 
-This project was completed as part of the CAPACITI Clickatell AI Bootcamp (April–May 2026), Week 3: Sentiment Analysis & Data Insights. It demonstrates the ability to apply AI tools to real-world data analysis tasks and communicate findings professionally.
+CAPACITI is a division of UMU Africa, based in Gqeberha, South Africa.  
+📧 hello@capaciti.org.za | 🌐 www.capaciti.org.za
 
 ---
 
-*CAPACITI is a division of UMU Africa | www.capaciti.org.za*
+*CAPACITI Clickatell AI Bootcamp 2026 | Week 4: AI Solution Development & Industry Application | May 2026*
