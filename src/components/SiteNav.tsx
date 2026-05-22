@@ -23,6 +23,13 @@ export function SiteNav() {
           >
             Dashboard
           </Link>
+          <Link
+            to="/finassist"
+            className="rounded-md px-3 py-1.5 text-muted-foreground hover:bg-secondary hover:text-foreground"
+            activeProps={{ className: "rounded-md px-3 py-1.5 bg-secondary text-primary font-semibold" }}
+          >
+            FinAssist
+          </Link>
         </nav>
       </div>
     </header>
